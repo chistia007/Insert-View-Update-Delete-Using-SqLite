@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc6699"
+    android:paddingTop="70dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#E8E8E8"
+        android:id="@+id/txtSignUp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSignUp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/nameLayout"
+        >
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtName"
+            android:hint="Enter name"
+            android:textAlignment="center"
+            android:textColorHint="#fff"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameLayout"
+        android:layout_marginTop="50dp"
+        android:id="@+id/userNameLayout"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:text="User Name"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:id="@+id/txtUserName"
+            android:layout_marginTop="10dp"
+           />
+
+        <EditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtUserName"
+            android:hint="Enter user name"
+            android:textAlignment="center"
+            android:textColorHint="#fff"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameLayout"
+        android:layout_marginTop="50dp"
+        android:id="@+id/passLayout"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:text="Password"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:id="@+id/txtPassword"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtPassword"
+            android:hint="Enter password"
+            android:textAlignment="center"
+            android:textColorHint="#fff"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passLayout"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnInsertDelete"
+        >
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="inseret"
+                android:id="@+id/btnInsert"
+                />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="delete"
+                android:layout_toRightOf="@+id/btnInsert"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btnDelete"
+                />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsertDelete"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnViewUpdate"
+        >
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:id="@+id/btnView"
+            />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_toRightOf="@+id/btnView"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnUpdate"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
